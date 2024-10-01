@@ -5,17 +5,17 @@ name: Python package
 
 on:
   push:
-    branches: [ "main", "dev" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "dev" ]
+    branches: [ "main" ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
     defaults:
-	    run:
-	      working-directory: ./practice3
+      run:
+        working-directory: ./practice3
     strategy:
       fail-fast: false
       matrix:
